@@ -71,7 +71,21 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+Plugins:
+- hexo-generator-feed
+- hexo-generator-sitemap
+#Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+#sitemap
+sitemap:
+  path: sitemap.xml
 
+#encrypt 加密
+encrypt:
+  password: 123456
 
 ## Themes: https://hexo.io/themes/
 theme: hexo-theme-yilia
@@ -101,3 +115,4 @@ deploy:
   type: git
   repo: https://git.oschina.net/lovexzq/lovexzq.git
   branch: master
+
